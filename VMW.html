@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dawlish Dev Design - View my Work</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="images/logos/Small%20logo.png" rel="icon">
+</head>
+<body class="VMW">
+<header>
+    <a href="index.html"><img src="images/logos/Main%20logo.png"></a>
+    <div class="dropdown" id="dropdown">
+        <button id="dropdownBtn">☰</button>
+        <div class="content" id="dropdownContent">
+            <a href="VMW.html">View my Work</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</header>
+
+<script>
+    const dropdown = document.getElementById('dropdown');
+    const dropdownBtn = document.getElementById('dropdownBtn');
+    const dropdownContent = document.getElementById('dropdownContent');
+
+    dropdownBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function() {
+        dropdown.classList.remove('active');
+    });
+
+    dropdownContent.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+</script>
+
+<h6>View My Work</h6>
+
+<div class="gallery">
+    <div class="img1"><img src="images/Screenshot%202026-04-20%20at%2017.16.09.png" alt="building services website"></div>
+    <p>For Rocky Building Services, I designed a bold, construction-focused brand identity and built a clean, modern website to match it. I created a strong logo, selected a professional color palette, and layout that clearly presents the companys services.</p>
+    <p>Coastal cafe needed a warm, welcoming online presence that reflected its local, seaside atmosphere. I designed a soft, modern layout with a friendly tone, focusing on clear typography and a relaxed color palette. The website highlights the cafes personality, menu, and story, giving visitors a sense of brand before they even arrive.</p>
+    <div class="img2"><img src="images/Screenshot%202026-04-24%20at%2016.54.03.png" alt="coffee shop website"></div>
+    <div class="img3"><img src="images/Screenshot%202026-04-20%20at%2017.18.53.png" alt="photography website"></div>
+    <p>For Pixel Photography, I created a minimal, image first portfolio that puts the photography at the center. I built a clean galery system, wrote modern captions, and designed a layout that feels sharp and professional. The site focuses on clarity, simplicity, and visual impact, allowing the photos to speak for themselfs.</p>
+</div>
+
+<footer class="foot">
+    <h4>Dawlish Dev studio</h4>
+    <p>Hand Coded Websites Built In Dawlish</p>
+    <div class="ql">
+        <a href="index.html">Home</a>
+        <a href="VMW.html">View My Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p class="cr">theodore.graham@dawlishdevstudio.co.uk</p>
+    <P class="cr">© 2026 Dawlish Dev Studio</P>
+</footer>
+</body>
+</html>

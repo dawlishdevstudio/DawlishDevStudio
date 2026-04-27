@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dawlish Dev Studio - Contact</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="images/logos/Small%20logo.png" rel="icon">
+</head>
+<body class="c">
+<header>
+    <a href="index.html"><img src="images/logos/Main%20logo.png"></a>
+    <div class="dropdown" id="dropdown">
+        <button id="dropdownBtn">☰</button>
+        <div class="content" id="dropdownContent">
+            <a href="VMW.html">View my Work</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</header>
+
+<script>
+    const dropdown = document.getElementById('dropdown');
+    const dropdownBtn = document.getElementById('dropdownBtn');
+    const dropdownContent = document.getElementById('dropdownContent');
+
+    dropdownBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function() {
+        dropdown.classList.remove('active');
+    });
+
+    dropdownContent.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+</script>
+
+<form action="https://formspree.io/f/xeevnoya" method="POST">
+<h6>Contact form</h6>
+<div class="contact">
+    <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+    <input type="text" name="first" placeholder="Last Name" autocomplete="off" required>
+    <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+    <textarea rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
+    <button type="submit">Send Message</button>
+</div>
+</form>    
+<footer class="foot">
+    <h4>Dawlish Dev studio</h4>
+    <p>Hand Coded Websites Built In Dawlish</p>
+    <div class="ql">
+        <a href="index.html">Home</a>
+        <a href="VMW.html">View My Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p class="cr">theodore.graham@dawlishdevstudio.co.uk</p>
+    <P class="cr">© 2026 Dawlish Dev Studio</P>
+</footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dawlish Dev Studio - Services</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="images/logos/Small%20logo.png" rel="icon">
+</head>
+<body class="serv">
+<header>
+    <a href="index.html"><img src="images/logos/Main%20logo.png"></a>
+    <div class="dropdown" id="dropdown">
+        <button id="dropdownBtn">☰</button>
+        <div class="content" id="dropdownContent">
+            <a href="VMW.html">View my Work</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</header>
+
+<script>
+    const dropdown = document.getElementById('dropdown');
+    const dropdownBtn = document.getElementById('dropdownBtn');
+    const dropdownContent = document.getElementById('dropdownContent');
+
+    dropdownBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function() {
+        dropdown.classList.remove('active');
+    });
+
+    dropdownContent.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+</script>
+
+<h6>Services</h6>
+
+<div class="servicegallery">
+    <div class="bw">
+        <h5>Basic Website - from £80</h5>
+        <p>A simple, clean website designed for small businesses that need an online presence without the complexity. This package includes a 1–3 page layout, a mobile‑friendly design, and a functional contact form so customers can reach you easily. It’s a great starting point for anyone who wants a modern, reliable website built with care.
+        </p>
+    </div>
+    <div class="pw">
+        <h5>Pro Websites - from £160</h5>
+        <p>A more complete, professional package for businesses that want a polished, fully featured website. This includes 3–5 pages, full SEO setup, publishing through GitHub, and a 2‑year .co.uk or .com domain. It also includes Google Business setup and everything from the Basic Website package. Ideal for businesses that want a strong, long‑term online presence.
+        </p>
+    </div>
+    <div class="ao">
+        <h5>Add Ons - from £15</h5>
+        <p>Enhance your website with optional extras tailored to your needs. Add additional pages for more content, secure a 2‑year domain, or include SEO to improve your visibility on search engines. You can also choose GitHub publishing for reliable hosting or ongoing Web Care for continued support and updates.
+        </p>
+    </div>
+    <div class="wc">
+        <h5>Web Care +  - £25/m</h5>
+        <p>A monthly support plan that keeps your website running smoothly. This includes regular content updates, monthly SEO reports, priority support, and reliable hosting. It’s perfect for businesses that want peace of mind knowing their website is always up‑to‑date, secure, and performing at its best.
+        </p>
+    </div>
+    <div class="btn-wrapper">
+        <a class="sbp" href="contact.html">Contact Me</a>
+    </div>
+</div>
+
+<footer class="foot">
+    <h4>Dawlish Dev studio</h4>
+    <p>Hand Coded Websites Built In Dawlish</p>
+    <div class="ql">
+        <a href="index.html">Home</a>
+        <a href="VMW.html">View My Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p class="cr">theodore.graham@dawlishdevstudio.co.uk</p>
+    <P class="cr">© 2026 Dawlish Dev Studio</P>
+</footer>
+</body>
+</html>

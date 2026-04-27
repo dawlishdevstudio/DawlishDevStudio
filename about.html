@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dawlish Dev Studio - About</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="images/logos/Small%20logo.png" rel="icon">
+</head>
+<body class="aboutback">
+<header>
+    <a href="index.html"><img src="images/logos/Main%20logo.png"></a>
+    <div class="dropdown" id="dropdown">
+        <button id="dropdownBtn">☰</button>
+        <div class="content" id="dropdownContent">
+            <a href="VMW.html">View my Work</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</header>
+
+<section class="about-section">
+    
+</section>
+
+<script>
+    const dropdown = document.getElementById('dropdown');
+    const dropdownBtn = document.getElementById('dropdownBtn');
+    const dropdownContent = document.getElementById('dropdownContent');
+
+    dropdownBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function() {
+        dropdown.classList.remove('active');
+    });
+
+    dropdownContent.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+</script>
+
+<div class="aboutdiv">
+    <h6 class="aboutme">About Me</h6>
+    <p>I’m Theodore, a young web designer and developer based in Dawlish. I build clean, modern websites with a focus on clarity, performance, and simple user experience. My goal is to help local businesses get online with designs that feel professional and trustworthy.
+        I’ve always loved coding, and I use that passion to create websites that are fast, responsive, and built with intention. Every project is hand‑crafted — no templates, no shortcuts — just clean code and thoughtful design.
+        Whether you need a brand‑new website or a refresh of your existing one, I work closely with you to create something that fits your business and feels right for your customers.
+    </p>
+    <div class="btn-wrapper">
+        <a class="sbp" href="services.html">View My Services</a>
+    </div>
+</div>
+
+<footer class="foot">
+    <h4>Dawlish Dev studio</h4>
+    <p>Hand Coded Websites Built In Dawlish</p>
+    <div class="ql">
+        <a href="index.html">Home</a>
+        <a href="VMW.html">View My Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p class="cr">theodore.graham@dawlishdevstudio.co.uk</p>
+    <P class="cr">© 2026 Dawlish Dev Studio</P>
+</footer>
+</body>
+</html>
