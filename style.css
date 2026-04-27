@@ -515,3 +515,9 @@ h6{
     text-underline-offset: 4px;
     text-decoration-color: #003f73;
 }
+
+* {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
