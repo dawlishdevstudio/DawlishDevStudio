@@ -515,3 +515,63 @@ h6{
     text-underline-offset: 4px;
     text-decoration-color: #003f73;
 }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+section{
+    padding: clamp(40px, 6vw, 100px) 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    .hero,
+    .services,
+    .about,
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .card,
+    .service-card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
